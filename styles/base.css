@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
-
 * {box-sizing: border-box;}
 
 body {
@@ -79,7 +78,7 @@ hr {
 
 .card {
     display: grid;
-    grid-column: 1fr;
+    grid-template-columns: 1fr;
     margin-top: 15px;
 }
 
@@ -96,8 +95,8 @@ li {
 footer {
     background-color: #2d2a2e;
     color:  #e4e6e8;
-    padding: 25px 50px;
-    margin-top: 100px;
+    padding: 25px 25px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
