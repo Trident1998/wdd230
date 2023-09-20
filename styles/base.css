@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
-
 * {box-sizing: border-box;}
 
 body {
@@ -30,7 +28,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #3498DB;
-    margin: 0 0 50px 0;
+    margin: 0 0 40px 0;
 }
 
 header img {
@@ -72,17 +70,31 @@ nav a:hover{
     color: #3E5064;
 }
 
-hr {
-    margin-bottom: 25px;
+.line {
+    border-bottom: 1px solid #888;
+    margin-bottom: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main h2 {
+    grid-row: 1;
+    border-bottom: 2px ridge #888;
+    padding-bottom: 15px;
+    margin: 0 15px;
 }
 
 .card {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 15px;
+    margin: 15px;
 }
 
 .card h3 {
+    height: 46px;
     background-color: #3498DB;
     padding: 10px 0;
     margin: 0;
