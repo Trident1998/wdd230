@@ -104,6 +104,11 @@ li {
     list-style-type: none;
 }
 
+.link {
+    text-decoration-line: underline;
+    color: #3498DB;
+}
+
 footer {
     background-color: #2d2a2e;
     color:  #e4e6e8;

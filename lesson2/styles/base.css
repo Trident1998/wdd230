@@ -38,6 +38,7 @@ h3, h4{
 a {
     color: #3498DB;
     text-decoration: none;
+    font-variant: small-caps;
 }
 
 header {
@@ -52,6 +53,11 @@ main {
     margin: 0;
 }
 
+
+.link {
+    text-decoration-line: underline;
+    color: #3498DB;
+}
 .card {
     background-color: #eeeeee;
     margin: 0 10px;
