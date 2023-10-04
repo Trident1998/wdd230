@@ -138,9 +138,12 @@ li {
     list-style-type: none;
 }
 
+.link:visited, .link:active {
+    color: navy;
+}
+
 .link {
     text-decoration-line: underline;
-    color: #3498DB;
 }
 
 iframe {
