@@ -13,10 +13,11 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
 }
 
 p {
-    font-size: 24px;
+    font-size: 16px;
 } 
 
 header {
@@ -126,6 +127,10 @@ header {
     background-color: #708090;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
 
 footer {
     background-color: #708090;
