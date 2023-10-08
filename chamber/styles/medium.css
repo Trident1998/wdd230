@@ -1,16 +1,9 @@
-@media (min-width: 500px) {
+@media (min-width: 600px) {
     
-    * {box-sizing: border-box;}
-
     body {
         max-width: 1000px;
     }
     
-    header {
-        display: grid;
-        grid-template-columns: 150px auto;
-    }
-
     p {
         font-size: 20px;
     } 
@@ -24,7 +17,7 @@
         display: flex;
         justify-content: flex-end;
         flex-direction: row;
-        z-index: 1;
+        z-index: 2;
         grid-row: 1;
         grid-column: 2;
         background-color: inherit;
@@ -58,7 +51,7 @@
         position: relative;
         top: 15px;
         left: 15px;
-        width: 28%;
+        width: 25%;
         height: auto; 
         z-index: 1;
         grid-row: 1;
@@ -78,7 +71,7 @@
         height: auto;
     }
     
-    .book {
+    .join {
         position: absolute;
         bottom: 50px;
         left: 25px;
@@ -91,7 +84,7 @@
         border-radius: 25px;
     }
     
-    .book:hover {
+    .join:hover {
         color: #fbfaf8;
         background-color: #708090;
     }
@@ -106,9 +99,14 @@
     }
     
     footer p {
-        font-size: 18px;
+        font-size: 16px;
     }
     
+    footer a {
+        color:  #fbfaf8;
+        text-decoration: none;
+    }
+
     .contacts {
         display: flex;
         flex-direction: column;
@@ -116,24 +114,21 @@
     }
     
     .info {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .map {
-        display: inline;
+        flex-direction: row;
     }
     
     footer .logo {
-        width: 25%;
-        height: auto;
+        position: inherit;
+        width: 30%;
     }
     
-    footer a {
-        color:  #fbfaf8;
-        text-decoration: none;
+    .map {
+        display: inherit;
+        width: 30%;
+        height: auto;
     }
     
 
 }
+
   

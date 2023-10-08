@@ -107,7 +107,7 @@ header {
     height: 100%;
 }
 
-.book {
+.join {
     grid-row: 1;
     grid-column: 1;
     justify-self: center;
@@ -121,7 +121,7 @@ header {
     border-radius: 25px;
 }
 
-.book:hover {
+.join:hover {
     color: #fbfaf8;
     background-color: #708090;
 }
@@ -163,11 +163,4 @@ footer .logo {
 
 .map {
     display: none;
-    width: 30%;
-    height: auto;
-}
-
-footer a {
-    color:  #fbfaf8;
-    text-decoration: none;
 }
