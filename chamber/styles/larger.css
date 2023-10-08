@@ -26,32 +26,16 @@
         grid-template-columns: 270px auto;
     }
 
-    #menu {
-		display: none;
-	}
-
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .navigation {
-        justify-content: flex-end;
-        z-index: 1;
-        grid-row: 1;
-        grid-column: 2;
-    }
-
-    .navigation li {
-		display: block;
-		flex: 1 1 100%;
-	}
-
+        
     .navigation a {
         font-size: 20px;
+        text-align: center;
+        padding: 25px 40px;
+        margin: auto 0;
+        text-shadow: 1px 1px 1px #000, 
+                     3px 3px 5px black; 
     }
-    
+
     .logo {
         width: 250px;
         height: auto;
