@@ -68,15 +68,37 @@ function showSlides2(n, slider) {
 
 
 
+const shares = document.querySelector(".shares");
+const forex = document.querySelector(".forex");
+const futures = document.querySelector(".futures");
+
+
+let sharesProperties = "{\"symbols\":[[\"Apple\",\"AAPL|1D\"],[\"Google\",\"GOOGL|1D\"],[\"Microsoft\",\"MSFT|1D\"]],\"chartOnly\":false,\"width\":\"100%\",\"height\":350,\"locale\":\"en\",\"colorTheme\":\"light\",\"autosize\":true,\"showVolume\":false,\"showMA\":false,\"hideDateRanges\":false,\"hideMarketStatus\":false,\"hideSymbolLogo\":false,\"scalePosition\":\"right\",\"scaleMode\":\"Normal\",\"fontFamily\":\"-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif\",\"fontSize\":10,\"noTimeScale\":false,\"valuesTracking\":\"1\",\"changeMode\":\"price-and-percent\",\"chartType\":\"area\",\"maLineColor\":\"#2962FF\",\"maLineWidth\":1,\"maLength\":9,\"lineWidth\":2,\"lineType\":0,\"dateRanges\":[\"1d|1\",\"1m|30\",\"3m|60\",\"12m|1D\",\"60m|1W\",\"all|1M\"]}"
+let forexProperties = "{\"symbols\":[[\"FX_IDC:EURUAH|1D\"],[\"FX_IDC:USDUAH|1D\"],[\"FX_IDC:CNYUAH|1D\"]],\"chartOnly\":false,\"width\":\"100%\",\"height\":\"350\",\"locale\":\"en\",\"colorTheme\":\"light\",\"autosize\":true,\"showVolume\":false,\"showMA\":false,\"hideDateRanges\":false,\"hideMarketStatus\":false,\"hideSymbolLogo\":false,\"scalePosition\":\"right\",\"scaleMode\":\"Normal\",\"fontFamily\":\"-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif\",\"fontSize\":\"10\",\"noTimeScale\":false,\"valuesTracking\":\"1\",\"changeMode\":\"price-and-percent\",\"chartType\":\"area\",\"maLineColor\":\"#2962FF\",\"maLineWidth\":1,\"maLength\":9,\"lineWidth\":2,\"lineType\":0,\"dateRanges\":[\"1d|1\",\"1m|30\",\"3m|60\",\"12m|1D\",\"60m|1W\",\"all|1M\"]}";
+let futuresProperties = "{\"symbols\":[[\"NYMEX:CL1!|1D\"],[\"COMEX:GC1!|1D\"],[\"COMEX_MINI:SIL1!|1D\"]],\"chartOnly\":false,\"width\":\"100%\",\"height\":\"350\",\"locale\":\"en\",\"colorTheme\":\"light\",\"autosize\":true,\"showVolume\":false,\"showMA\":false,\"hideDateRanges\":false,\"hideMarketStatus\":false,\"hideSymbolLogo\":false,\"scalePosition\":\"right\",\"scaleMode\":\"Normal\",\"fontFamily\":\"-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif\",\"fontSize\":\"10\",\"noTimeScale\":false,\"valuesTracking\":\"1\",\"changeMode\":\"price-and-percent\",\"chartType\":\"area\",\"maLineColor\":\"#2962FF\",\"maLineWidth\":1,\"maLength\":9,\"lineWidth\":2,\"lineType\":0,\"dateRanges\":[\"1d|1\",\"1m|30\",\"3m|60\",\"12m|1D\",\"60m|1W\",\"all|1M\"]}";
+
+shares.textContent = sharesProperties
+forex.textContent = forexProperties;
+futures.textContent = futuresProperties;
 
 
 
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("main");
+const sections = document.querySelectorAll("section")
 
-const test = document.querySelector(".shares");
-
-const sharesProperties = "{\"symbols\":[[\"Apple\",\"AAPL|1D\"],[\"Google\",\"GOOGL|1D\"],[\"Microsoft\",\"MSFT|1D\"]],\"chartOnly\":false,\"width\":\"100%\",\"height\":500,\"locale\":\"en\",\"colorTheme\":\"light\",\"autosize\":true,\"showVolume\":false,\"showMA\":false,\"hideDateRanges\":false,\"hideMarketStatus\":false,\"hideSymbolLogo\":false,\"scalePosition\":\"right\",\"scaleMode\":\"Normal\",\"fontFamily\":\"-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif\",\"fontSize\":10,\"noTimeScale\":false,\"valuesTracking\":\"1\",\"changeMode\":\"price-and-percent\",\"chartType\":\"area\",\"maLineColor\":\"#2962FF\",\"maLineWidth\":1,\"maLength\":9,\"lineWidth\":2,\"lineType\":0,\"dateRanges\":[\"1d|1\",\"1m|30\",\"3m|60\",\"12m|1D\",\"60m|1W\",\"all|1M\"]}"
-
-
-
-
-  test.textContent = sharesProperties;
+modeButton.addEventListener("click", () => {
+	if (modeButton.textContent.includes("🕶️")) {
+		main.style.background = "#001f3f";
+		main.style.color = "#fbfaf8";
+		sections.forEach(section => {
+            section.style.background = "#333333";
+        });		modeButton.textContent = "🔆";
+	} else {
+		main.style.background = "#fbfaf8";
+		main.style.color = "#001f3f";
+		sections.forEach(section => {
+            section.style.background = "#eeeeee";
+        });		modeButton.textContent = "🕶️";
+	}
+});

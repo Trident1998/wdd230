@@ -21,6 +21,7 @@
     <header>
         <img class="logo" src="images/logo-removebg-preview.png" width="760" height="330" alt="logo">
         <button id="menu"></button>
+        <div id="mode">🕶️</div>
         <nav class="navigation">
             <a href="#">Home</a>
             <a href="lesson03/siteplan.html">Discovery</a>
@@ -53,46 +54,55 @@
                 </div>
                 
                 
-                <a class="prev" value="evenats" onclick="plusSlides(-1, 1)">❮</a>
-                <a class="next" value="evenats" onclick="plusSlides(1, 1)">❯</a>
-                </div>
-                <br>
-                
-                <div style="text-align:center">
-                  <span class="dot1" onclick="currentSlide(1, 1)"></span> 
-                  <span class="dot1" onclick="currentSlide(2, 1)"></span> 
-                  <span class="dot1" onclick="currentSlide(3, 1)"></span> 
-                </div>
+                <a class="prev" onclick="plusSlides(-1, 1)">❮</a>
+                <a class="next" onclick="plusSlides(1, 1)">❯</a>
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot1" onclick="currentSlide(1, 1)"></span> 
+                <span class="dot1" onclick="currentSlide(2, 1)"></span> 
+                <span class="dot1" onclick="currentSlide(3, 1)"></span> 
+            </div>
             
         </section>
 
         <section>
-            <h2>Currency/Shares/Metals</h2>
-            <div class="mySlides2 fade">
-            
-                <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-    <script class="shares" type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+            <h2>Shares/Forex/Futures</h2>
+            <div class="slideshow-container">
+                <div class="mySlides2 fade">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                        <script class="shares" type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
 
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
-            
-            </div>
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
 
-            <div class="mySlides2 fade">
-                <p>reprehenderit consequatur deserunt laboriosam debitis enim corrupti, nihil nam quos.</p>
-            </div>
-            
-            <div class="mySlides2 fade">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum rem voluptatibus ipsa commodi! Necessitatibus, quae cum sequi expedita sit reprehenderit consequatur deserunt laboriosam debitis enim corrupti, nihil nam quos.</p>
-            </div>
-            
-            
-            <a class="prev" value="evenats" onclick="plusSlides(-1, 2)">❮</a>
-            <a class="next" value="evenats" onclick="plusSlides(1, 2)">❯</a>
+                <div class="mySlides2 fade">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                        <script class="forex" type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async></script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+                
+                <div class="mySlides2 fade">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                        <script class="futures" type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async></script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 2)">❮</a>
+                <a class="next" onclick="plusSlides(1, 2)">❯</a>
             </div>
             <br>
             

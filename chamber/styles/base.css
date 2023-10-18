@@ -25,6 +25,15 @@ header {
     grid-template-columns: 1fr;
 }
 
+#mode {
+	position: absolute;
+	top: 7%;
+	right: 2%;
+	font-size: 3rem;
+	cursor: pointer;
+    z-index: 1;
+}
+
 #menu {
 	font-size: 2.5rem;
 	border: 1px solid rgba(0,0,0,.3);
@@ -143,6 +152,10 @@ section h2 {
     padding-top: 15px;
     padding-bottom: 5px;
     border-bottom: 1px groove #001f3f;
+}
+
+.mySlides2 {
+    margin: 25px 0 17px;
 }
 
 /* Slideshow container */
