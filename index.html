@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <img src="images/selfie.jpg" width="150" height="150" alt="My photo">
+        <img src="images/selfie.webp" width="150" height="150" alt="My photo">
         <h1>Dmytro Inanytskyi</h1>
         <button id="menu"></button>
         <nav class="navigation">
@@ -33,6 +33,16 @@
 
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
+        <div class="hero">
+            <picture>
+                <source srcset="images/kyiv-ukraine-temple-small.webp" media="(max-width: 400px)">
+                <source srcset="images/kyiv-ukraine-temple-medium.webp" media="(max-width: 960px) and (orientation: landscape)">
+                <img src="images/kyiv-ukraine-temple-large.webp" alt="Kyiv Ukraine Temple">
+              </picture>
+            <div class="herolabel">
+                <p>Kyiv Ukraine Temple</p>
+            </div>
+        </div>
 
         <section class="card">
             <h3>Learning Activities</h3>
