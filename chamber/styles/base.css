@@ -26,11 +26,13 @@ header {
 }
 
 #mode {
-	position: absolute;
-	top: 7%;
-	right: 2%;
+	position: relative;
+    justify-self: right;
+    top: 70px;
 	font-size: 3rem;
 	cursor: pointer;
+    grid-row: 1;
+    grid-column: 1;
     z-index: 1;
 }
 
@@ -110,11 +112,14 @@ header {
     grid-column: 1;
 }
 
-.hero-img {
+picture {
     grid-row: 1;
     grid-column: 1;
+}
+
+.hero-img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .join {

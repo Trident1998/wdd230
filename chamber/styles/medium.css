@@ -57,6 +57,14 @@
         grid-row: 1;
         grid-column: 1/3;
     }
+
+    #mode {
+        position: relative;
+        justify-self: right;
+        right: 30px;
+        top: 80px;
+        grid-column: 2;
+    }
     
     #hero {
         position: relative;
@@ -64,6 +72,10 @@
         grid-column: 1/3;
         width: 100%;
         margin-top: -150px;
+    }
+
+    picture {
+        margin-top: 150px;
     }
     
     .hero-img {
