@@ -114,18 +114,14 @@
         grid-template-columns: 2fr 5fr;
         height: 100%;
     }
-    
+
     .container img:hover {
         transform: scale(1.1); 
         transition: transform 0.3s; 
     }
     
     footer {
-        width: 100%;
-        background-color: #708090;
-        color:  #fbfaf8;
         padding: 25px 50px;
-        margin-top: 200px;
     }
     
     footer p {
