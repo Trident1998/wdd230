@@ -4,6 +4,7 @@ body {
     max-width: 1300px;
     font-family: 'Merriweather', serif;
     font-weight: 400;
+    font-size: 16px;
     color: #001f3f;
     text-align: center;
     background-color: #fbfaf8;
@@ -13,7 +14,18 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
 }
 
 p {
@@ -118,6 +130,11 @@ picture {
 }
 
 .hero-img {
+    width: 100%;
+    height: auto;
+}
+
+img {
     width: 100%;
     height: auto;
 }
@@ -254,6 +271,49 @@ section h2 {
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+.main-content div {
+    margin-bottom: 30px;
+}
+
+
+.main-content h3 {
+    margin: 10px 0;
+}
+
+.sidebar {
+    color: #fbfaf8;
+    padding: 0 20px;
+}
+
+.sidebar h2 {
+    color: #001f3f;
+    background-color: #FFFFFF;
+}
+
+.sidebar section {
+    background-color: #333;
+    padding: 15px;
+}
+
+.sidebar h2 {
+    color: #001f3f;
+    background-color: #fbfaf8;
+}
+.sidebar p {
+    font-size: 16px;
+    margin: 5px;
+}
+
+.main-content {
+    padding: 0 20px;
 }
 
 

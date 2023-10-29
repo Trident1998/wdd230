@@ -4,8 +4,20 @@
         max-width: 1300px;
     }
     
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
     p {
-        font-size: 24px;
+        font-size: 20px;
     } 
     
     header {
