@@ -9,6 +9,10 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://trident1998.github.io/wdd230/from.html">
     <title>Forms</title>
+        <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">    
+    <link rel="stylesheet" href="styles/larger.css">   
     <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
@@ -25,7 +29,8 @@
         </nav>
     </header>
     <main>
-        <form action="record.html" method="get">
+        <div id="formmessage"></div>
+        <form  method="get" onsubmit="checkPasswordMatch(event)">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             <br><br>
@@ -35,7 +40,7 @@
             <br><br>
 
             <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required onsubmit="checkPasswordMatch()">
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
             <br><br>
 
             <label for="email">Email:</label>
@@ -51,30 +56,10 @@
         </form>
     </main>
     <footer>
-
+        <p>&copy; <span id="currentYear"></span> Dmytro Ivanytskyi, Ukraine <img src="images/ua-flag.svg" alt="flag"></p>
+        <p id="lastModified"></p>
     </footer>
-    <script>
-        function checkPasswordMatch() {
-            var password = document.getElementById("password").value;
-            var confirmPassword = document.getElementById("confirmPassword").value;
-
-            if (password !== confirmPassword) {
-                alert("Passwords do not match. Please try again.");
-                document.getElementById("username").value = "";
-                document.getElementById("password").value = "";
-                document.getElementById("confirmPassword").value = "";
-                document.getElementById("username").focus();
-                return false;
-            }
-
-            return true;
-        }
-
-        function updateRatingDisplay() {
-            var ratingDisplay = document.getElementById("ratingDisplay");
-            var pageRating = document.getElementById("pageRating").value;
-            ratingDisplay.innerText = pageRating;
-        }
-    </script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts//form.js"></script>
 </body>
 </html>

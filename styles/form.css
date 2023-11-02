@@ -6,13 +6,14 @@
     --button-bg-color: #007bff;
     --button-text-color: #fff;
   }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
   form {
-    max-width: 400px;
+    width: 400px;
     margin: var(--form-margin) auto;
     padding: var(--form-padding);
     border: 1px solid #ccc;
