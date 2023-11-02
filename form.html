@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <form action="record.html" method="get">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8}">
+            <br><br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required oninput="checkPasswordMatch()">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address">
+            <br><br>
+
+            <label for="pageRating">Page Rating:</label>
+            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="updateRatingDisplay()">
+            <span id="ratingDisplay">1</span>
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function checkPasswordMatch() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match. Please try again.");
+                document.getElementById("username").value = "";
+                document.getElementById("password").value = "";
+                document.getElementById("confirmPassword").value = "";
+                document.getElementById("username").focus();
+                return false;
+            }
+
+            return true;
+        }
+
+        function updateRatingDisplay() {
+            var ratingDisplay = document.getElementById("ratingDisplay");
+            var pageRating = document.getElementById("pageRating").value;
+            ratingDisplay.innerText = pageRating;
+        }
+    </script>
+</body>
+</html>
