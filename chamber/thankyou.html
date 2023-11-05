@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dmytro Ivanytskyi">
+    <meta property="og:title" content="Kyiv Chamber of Commerce">
+    <meta name="description" content="This site official site of Kyiv Chamber of Commerce website where you will be able to find essential information about the chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://trident1998.github.io/wdd230/lesson3/chamber-site-plan.html/">
+    <meta property="og:image" content="https://uschamber.imgix.net/https%3A%2F%2Fwww.uschamber.com%2Fassets%2Fimages%2Fchamber_exterior_entrance.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.5&fp-y=0.5&h=2250&q=75&w=1800&s=fb31f3279bf540bd34ddd684faa0a4d7">
+    <link rel="icon" href="favicon.png">
+    <title>Kyiv Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css"> 
+    <link rel="stylesheet" href="styles/medium.css">       
+    <link rel="stylesheet" href="styles/larger.css">  
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo-removebg-preview.webp" width="760" height="330" alt="logo">
+        <button id="menu"></button>
+        <div id="mode">🕶️</div>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="chamber/">Directory</a>
+            <a href="join.html" target="_blank">Join</a>
+        </nav>
+        <div id="hero">
+            <picture> 
+                <source srcset="images/wdd230-org-small.webp" media="(max-width: 400px)">
+                <source srcset="images/wdd230-org-medium.webp" media="(max-width: 960px)">
+                <img class="hero-img" src="images/wdd230-org-large.webp" alt="The Matherland"  width="1600" height="1067">
+            </picture>
+            <a class="join" href="contactus.html">Join US</a>
+        </div>
+    </header>
+
+    <main>
+        <H1>Thank You!</H1>
+    </main>
+
+    <footer>
+        <div class="info">
+            <img class="logo" src="images/logo-removebg-preview.webp" width="760" height="330" alt="logo">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6290.9785115154045!2d30.432948037429423!3d50.45428895811482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdf530c03033%3A0xbb409f771ec14254!2sSoftServe%20Kyiv%204!5e0!3m2!1suk!2sua!4v1696706871656!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="contacts">
+                <p>info@timbuktucc.org</p> 
+                <p>+(2231 2070-2300)</p>
+            </div>
+
+        </div>
+        
+        <hr>
+        <p>&copy; <span id="currentYear"></span>  Kyiv Chamber of Commerce | Dmytro Ivanytskyi | WDD 230 Project | <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/last-modified.js"></script>
+</body>
+</html>

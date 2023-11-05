@@ -25,6 +25,14 @@
         grid-template-columns: 270px auto;
     }
 
+    main.open {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
     .navigation a {
         font-size: 20px;
         text-align: center;
@@ -67,6 +75,9 @@
         color: #fbfaf8;
         background-color: #708090;
     }
+
+
+
     
     footer p {
         font-size: 18px;

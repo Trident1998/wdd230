@@ -161,6 +161,7 @@ img {
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 section {
@@ -315,6 +316,60 @@ section h2 {
 .main-content {
     padding: 0 20px;
 }
+
+:root {
+    --form-margin: 20px;
+    --form-padding: 10px;
+    --label-margin-bottom: 5px;
+    --input-margin-bottom: 10px;
+    --button-bg-color: #007bff;
+    --button-text-color: #fbfaf8;
+  }
+
+  form, .benefits-container div {
+    width: 100%;
+    max-width: 400px;
+    margin: var(--form-margin) var(--form-margin);
+    padding: var(--form-padding);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: var(--label-margin-bottom);
+  }
+  
+  input {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-bottom: var(--input-margin-bottom);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .benefits-container div ul {
+    list-style-type: none;
+  }
+
+  .benefits-container div ul li::before {
+    content: "☑️ ";
+  }
 
 
 footer {
