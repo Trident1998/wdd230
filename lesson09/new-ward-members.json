@@ -1,0 +1,23 @@
+{
+    "family_name": "Ivanytskyi",
+    "move_date": "2020-02-22",
+    "members_amount_in_family": 3,
+    "is_visited_by_bishopric": true,
+    "members": [
+        {
+            "name": "Dmytro",
+            "gender": "M",
+            "birthdate": "1998-07-23"
+        },       
+        {
+            "name": "Olha",
+            "gender": "F",
+            "birthdate": "1999-04-09"
+        },       
+        {
+            "name": "Alex",
+            "gender": "F",
+            "birthdate": "2022-09-09"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson1/holygrail.html",
+                    "title": "holygrail"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson2/design-principles.html",
+                    "title": "Design principles"
+                },
+                {
+                    "url": "lesson2/design.html",
+                    "title": "Color Contrast"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/lazyload.html",
+                    "title": "lazyload"
+                },
+                {
+                    "url": "lesson03/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "bom"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Table build"
+                }
+            ]
+        }
+    ]
+}
