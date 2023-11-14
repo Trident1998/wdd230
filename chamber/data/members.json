@@ -1,0 +1,78 @@
+{
+    "members": [
+        {
+            "name": "Genesis",
+            "address": "04080, Україна, м. Київ, вул. Оленівська, 23",
+            "phone_number": "+380 66 778 4506",
+            "link": "https://www.gen.tech/",
+            "staffs_amount": "more then 1500",
+            "membership_level": "silver",
+            "logo": "compamieslogo/genesis-logo.png"
+        },
+        {
+            "name": "Luxoft",
+            "address": "Radyshcheva Street, 10/14 IRVA B, Київ, 03124",
+            "phone_number": "+380 44 481 0060",
+            "link": "https://www.luxoft.com/",
+            "staffs_amount": "more then 1500",
+            "membership_level": "gold",
+            "logo": "compamieslogo/luxoft-logo.png"
+
+        },
+        {
+            "name": "SoftServe",
+            "address": "проспект Перемоги, 53, Київ, 02000",
+            "phone_number": "+380 44 345 0089",
+            "link": "https://www.softserveinc.com/en-us",
+            "staffs_amount": "more then 1500",
+            "membership_level": "gold",
+            "logo": "compamieslogo/softserve-logo.png"
+        },
+        {
+            "name": "EPAM",
+            "address": "вулиця Кудряшова, 14Б, Київ, 03035",
+            "phone_number": "+380 44 390 5457",
+            "link": "https://careers.epam.ua/",
+            "staffs_amount": "more then 1500",
+            "membership_level": "NP",
+            "logo": "compamieslogo/epam-logo.png"
+        },
+        {
+            "name": "GlobalLogic",
+            "address": "Протасов Бізнес-Парк, вул. М. Грінченка, 2/1, Київ, 02000",
+            "phone_number": "+380 44 492 9695",
+            "link": "https://careers.epam.ua/",
+            "staffs_amount": "more then 1500",
+            "membership_level": "silver",
+            "logo": "compamieslogo/globallogic-logo.png"
+        },
+        {
+            "name": "GeeksForLess Inc.",
+            "address": "Parus, вулиця Мечникова, 2, Київ, 02000",
+            "phone_number": "+380 44 902 9695",
+            "link": "https://geeksforless.com/",
+            "staffs_amount": "800...1500",
+            "membership_level": "bronze",
+            "logo": "compamieslogo/geeks-for-less-inc-logo.png"
+
+        },
+        {
+            "name": "Qubit Labs",
+            "address": "Parus, вулиця Мечникова, 2, Київ, 02000",
+            "phone_number": "+380 44 902 9695",
+            "link": "https://geeksforless.com/",
+            "staffs_amount": "21...200",
+            "membership_level": "bronze",
+            "logo": "compamieslogo/qubit-logo.png"
+        },
+        {
+            "name": "Frag Lab",
+            "address": "Броварський проспект, 2в, Київ, 02000",
+            "phone_number": "+380 44 987 6655",
+            "link": "https://fraglab.com/",
+            "staffs_amount": "800...1500",
+            "membership_level": "NP",
+            "logo": "compamieslogo/frag-logo.png"
+        }
+    ]
+}

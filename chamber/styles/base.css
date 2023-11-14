@@ -372,6 +372,90 @@ section h2 {
   }
 
 
+
+
+
+.card {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.cards .card {
+	text-align: center;
+}
+
+.cards img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.cards .card > * {
+	margin: 0.1rem;
+}
+
+.cards h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list .card {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list .card > * {
+	margin: 0 1rem;
+}
+
+.list .card img {
+	display: none; /* smaller viewports only */
+}
+
+.list .card h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list .card:nth-child(even) {
+	background-color: #bed;
+}
+
+.card h3 {
+	font-size: 1.5rem;
+}
+
+.card p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+.card a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+
 footer {
     background-color: #445566;
     color: #fbfaf8;
