@@ -1,7 +1,7 @@
 document.querySelector("main").style.display = "block";
 
-const baseURL = "http://127.0.0.1:5500/wdd230/";
-const membersURL = "http://127.0.0.1:5500/wdd230/chamber/data/members.json";
+const baseURL = "https://trident1998.github.io/wdd230/";
+const membersURL = "https://trident1998.github.io/wdd230/chamber/data/members.json";
 
 async function getMembers() {
     const response = await fetch(membersURL);
