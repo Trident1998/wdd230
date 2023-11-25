@@ -473,9 +473,53 @@ section h2 {
 	letter-spacing: 1.1pt;
 }
 
-img {
+.card img {
 	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
+	max-width: 100%;
+}
+
+
+.toggle {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+
+.toggle button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; 
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
 }
 
 .weather-img {

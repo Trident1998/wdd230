@@ -2,6 +2,11 @@ document.querySelector("main").style.display = "block";
 
 const baseURL = "https://trident1998.github.io/wdd230/";
 const membersURL = "https://trident1998.github.io/wdd230/chamber/data/members.json";
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const article = document.querySelector(".cards");
+
+
 
 async function getMembers() {
     const response = await fetch(membersURL);
@@ -11,7 +16,6 @@ async function getMembers() {
 }
 
 function displayMembers(members) {
-    const article = document.querySelector(".cards");
     members.forEach(member => {
         const section = document.createElement("section");
         section.classList.add("card");
@@ -48,3 +52,17 @@ function displayMembers(members) {
   
   
   getMembers();
+
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	article.classList.add("grid");
+	article.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList);
+
+function showList() {
+	article.classList.add("list");
+	article.classList.remove("grid");
+}
