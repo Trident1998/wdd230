@@ -522,6 +522,48 @@ section {
 	background-color: #bed;
 }
 
+
+.current-weather {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .temperature,
+  .description {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .current-icon {
+    width: 100px; 
+    height: 100px; 
+    margin-bottom: 15px;
+  }
+  
+  .forecast {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for a 3-day forecast */
+    gap: 20px; /* Adjust the gap between forecast items */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .forecast-data {
+    text-align: center;
+    margin-top: 5px;
+  }
+
 .weather-img {
     display: inline-block;
     height: 75px;

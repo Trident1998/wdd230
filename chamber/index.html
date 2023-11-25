@@ -34,7 +34,7 @@
                 <source srcset="images/wdd230-org-medium.webp" media="(max-width: 960px)">
                 <img class="hero-img" src="images/wdd230-org-large.webp" alt="The Matherland"  width="1600" height="1067">
             </picture>
-            <a class="join" href="contactus.html">Join US</a>
+            <a class="join" href="join.html">Join US</a>
         </div>
     </header>
     <main>
@@ -85,7 +85,7 @@
                     <div class="tradingview-widget-container">
                         <div class="tradingview-widget-container__widget"></div>
                         <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-                        <script class="shares" type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                        <script class="shares" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
 
                         </script>
                     </div>
@@ -97,7 +97,7 @@
                     <div class="tradingview-widget-container">
                         <div class="tradingview-widget-container__widget"></div>
                         <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-                        <script class="forex" type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async></script>
+                        <script class="forex" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async></script>
                     </div>
                     <!-- TradingView Widget END -->
                 </div>
@@ -107,7 +107,7 @@
                     <div class="tradingview-widget-container">
                         <div class="tradingview-widget-container__widget"></div>
                         <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-                        <script class="futures" type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async></script>
+                        <script class="futures" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async></script>
                     </div>
                     <!-- TradingView Widget END -->
                 </div>
@@ -121,19 +121,21 @@
               <span class="dot2" onclick="currentSlide(2, 2)"></span> 
               <span class="dot2" onclick="currentSlide(3, 2)"></span> 
             </div>
-
         </section>
             
         <section>
-            <h2>Weather</h2>
-            <img class="weather-img" src="" alt="">
-
-            <p class="weather-descr"></p>
-
-            <h3>Forecast</h3>
-            <ul class="forecast"></ul>
-
-
+            <div class="weather-container">
+                <div class="current-weather">
+                  <h2>Current Weather</h2>
+                  <p class="temperature">Temperature: <span id="current-temp"></span></p>
+                  <p class="description">Description: <span id="current-description"></span></p>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2>3-Day Forecast</h2>
+                <div class="forecast-grid" id="forecast-grid">
+                </div>
+            </div>
 
             <div id="temperature">Temperature: <span id="tempValue">25</span> °F</div>
             <div id="windspeed">Wind Speed: <span id="windValue">5</span> mph</div>
