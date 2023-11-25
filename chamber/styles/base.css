@@ -445,7 +445,7 @@ section h2 {
 }
 
 .list .card img {
-	display: none; /* smaller viewports only */
+	display: none;
 }
 
 .list .card h3 {
@@ -457,17 +457,12 @@ section h2 {
 	background-color: #bed;
 }
 
-.card h3 {
-	font-size: 1.5rem;
-}
-
 .card p {
 	font-weight: 600;
 	font-size: smaller;
 }
 
 .card a {
-	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.85rem;
 	color: navy;
 	letter-spacing: 1.1pt;
