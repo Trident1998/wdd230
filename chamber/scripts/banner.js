@@ -1,6 +1,6 @@
 const today = new Date().getDay();
 
-if (today <= 2) {
+if (today > 0 && today <= 3) {
   const banner = document.getElementById('banner');
   banner.style.display = 'block';
   

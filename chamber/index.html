@@ -43,103 +43,67 @@
         <div class="banner" id="banner">
             <p>Join us at the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
             <span class="close-btn" id="close-btn">❌</span>
-          </div>
-          
+        </div>
 
-        <section>
-            <h2>Evenats</h2>
+        <div class="grid">
 
-            <div class="slideshow-container">
+            <section class="events">
+                <h2>Events</h2>
 
-                <div class="mySlides1 fade">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum rem voluptatibus ipsa commodi! Necessitatibus, quae cum sequi expedita sit reprehenderit consequatur deserunt laboriosam debitis enim corrupti, nihil nam quos.</p>
+                <div class="slideshow-container">
+
+                    <div class="mySlides1 fade">
+                        <h3>Kyiv International Business Conference</h3>
+                        <p>An annual event bringing together global business leaders, policymakers, and innovators to discuss economic growth, investment opportunities, and emerging trends in Ukraine. The conference could cover topics such as technology advancements, trade policies, and sustainable development, offering networking opportunities and insights for local businesses.</p>
+                    </div>
+                    
+                    <div class="mySlides1 fade">
+                        <h3>Cultural Exchange Festival</h3>
+                        <p>A week-long festival celebrating Kyiv's diverse culture, arts, and heritage. It could feature art exhibitions, traditional music and dance performances, food stalls with Ukrainian cuisine, workshops on traditional crafts, and discussions on preserving cultural heritage. This event could foster community engagement and promote tourism in the region.</p>
+                    </div>
+                    
+                    <div class="mySlides1 fade">
+                        <h3>Entrepreneurship Summit</h3>
+                        <p>A two-day summit aimed at fostering entrepreneurship and startups in Kyiv. The event might include keynote speeches by successful entrepreneurs, panel discussions on funding opportunities and business growth strategies, workshops on tech innovations, and networking sessions connecting aspiring entrepreneurs with mentors and investors. This could stimulate the local economy and encourage innovation within the city.</p>
+                    </div>
                 </div>
-                
-                <div class="mySlides1 fade">
-                    <p>reprehenderit consequatur deserunt laboriosam debitis enim corrupti, nihil nam quos.</p>
-                </div>
-                
-                <div class="mySlides1 fade">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum rem voluptatibus ipsa commodi! Necessitatibus, quae cum sequi expedita sit reprehenderit consequatur deserunt laboriosam debitis enim corrupti, nihil nam quos.</p>
-                </div>
-                
-                
+
                 <a class="prev" onclick="plusSlides(-1, 1)">❮</a>
                 <a class="next" onclick="plusSlides(1, 1)">❯</a>
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-                <span class="dot1" onclick="currentSlide(1, 1)"></span> 
-                <span class="dot1" onclick="currentSlide(2, 1)"></span> 
-                <span class="dot1" onclick="currentSlide(3, 1)"></span> 
-            </div>
-            
-        </section>
-
-        <section>
-            <h2>Shares/Forex/Futures</h2>
-            <div class="slideshow-container">
-                <div class="mySlides2 fade">
-                    <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container">
-                        <div class="tradingview-widget-container__widget"></div>
-                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
-                        <script class="shares" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
-                            
-                        </script>
-                    </div>
-                    <!-- TradingView Widget END -->
-                </div>
-
-                <div class="mySlides2 fade">
-                    <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container">
-                        <div class="tradingview-widget-container__widget"></div>
-                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
-                        <script class="forex" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async></script>
-                    </div>
-                    <!-- TradingView Widget END -->
+                <br>
+                
+                <div class="dots" style="text-align:center">
+                    <span class="dot1" onclick="currentSlide(1, 1)"></span> 
+                    <span class="dot1" onclick="currentSlide(2, 1)"></span> 
+                    <span class="dot1" onclick="currentSlide(3, 1)"></span> 
                 </div>
                 
-                <div class="mySlides2 fade">
-                    <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container">
-                        <div class="tradingview-widget-container__widget"></div>
-                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
-                        <script class="futures" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async></script>
+            </section>
+                
+            <section class="weather">
+                <div class="weather-container">
+                    <div class="current-weather">
+                    <h2>Current Weather</h2>
+                    <p class="temperature">Temperature: <span id="current-temp"></span></p>
+                    <p class="description">Description: <span id="current-description"></span></p>
                     </div>
-                    <!-- TradingView Widget END -->
                 </div>
-                <a class="prev" onclick="plusSlides(-1, 2)">❮</a>
-                <a class="next" onclick="plusSlides(1, 2)">❯</a>
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot2" onclick="currentSlide(1, 2)"></span> 
-              <span class="dot2" onclick="currentSlide(2, 2)"></span> 
-              <span class="dot2" onclick="currentSlide(3, 2)"></span> 
-            </div>
-        </section>
-            
-        <section>
-            <div class="weather-container">
-                <div class="current-weather">
-                  <h2>Current Weather</h2>
-                  <p class="temperature">Temperature: <span id="current-temp"></span></p>
-                  <p class="description">Description: <span id="current-description"></span></p>
+                <div class="forecast">
+                    <h2>3-Day Forecast</h2>
+                    <div class="forecast-grid" id="forecast-grid">
+                    </div>
                 </div>
-            </div>
-            <div class="forecast">
-                <h2>3-Day Forecast</h2>
-                <div class="forecast-grid" id="forecast-grid">
-                </div>
-            </div>
 
             <div id="temperature">Temperature: <span id="tempValue">25</span> °F</div>
             <div id="windspeed">Wind Speed: <span id="windValue">5</span> mph</div>
             <div id="windchill">Wind Chill: <span id="windchillValue">N/A</span> °F</div>
+                
+        </section>
+
+        <section class="spotlight">
+            <h2>Spotlight</h2>
+            <div class="cards">
+            </div>
         </section>
     </main>
     <footer>
@@ -164,5 +128,6 @@
     <script src="scripts/weather.js"></script>
     <script src="scripts/banner.js"></script>
     <script src="scripts/humburger-menu.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>
