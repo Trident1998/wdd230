@@ -55,7 +55,6 @@ function displayMembers(members) {
 
 gridbutton.addEventListener("click", () => {
 	// example using arrow function
-	article.classList.add("grid");
 	article.classList.remove("list");
 });
 
@@ -63,5 +62,4 @@ listbutton.addEventListener("click", showList);
 
 function showList() {
 	article.classList.add("list");
-	article.classList.remove("grid");
 }
