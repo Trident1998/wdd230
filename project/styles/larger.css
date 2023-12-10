@@ -1,0 +1,19 @@
+@media screen and (min-width: 910px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1ft;
+    }
+
+    .info {
+        grid-column: 1;
+    }
+
+    .contacts {
+        grid-column: 2;
+    }
+
+    .social {
+        grid-row: 1;
+        grid-column: 3;
+    }
+}

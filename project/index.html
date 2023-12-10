@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dmytro Ivanytskyi">
+    <meta name="description" content="~Scoots~ is a fictitious motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+    <meta property="og:title" content="~Scoots~">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.motoroads.com/images/pic-motorbike-rental.webp">
+    <meta property="og:url" content="https://trident1998.github.io/wdd230/project/index.html/">
+
+    <title>~Scoots~</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <a href="index.html">
+                    <img id="logo-img" src="images/logo1.png" alt="Company Logo" width="400" height="138">
+                </a>
+            </div>       
+
+            <div id="hamburger"></div>
+
+            <div class="theme-container light">
+                <img id="theme-icon" src="images/sun-white.svg" alt="dark mode button" width="24" height="24">
+            </div>
+        </div>
+
+        <nav class="navigation">    
+            <a href="index.html" class="active">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.jpeg">
+                <source media="(max-width: 900px)" srcset="images/hero-medium.jpeg">
+                <img src="images/hero-large.jpeg" alt="Hero image" width="1920" height="700">
+            </picture>
+
+            <a class="rental" href="reservations.html">Rent reservation</a>
+        </div>
+        <h1>Types of Rentals</h1>
+
+        <section class="rental-type">
+            <h2>Honda Motor <strong>Scooters</strong></h2>
+
+            <section>
+                <h3>Honda Metropolitan (49cc) - 1 person</h3>
+                <img src="images/scooters/honda-metropolitan.png" alt="Honda Metropolitan (49cc) - 1 person">
+            </section>
+            <section>
+                <h3>Honda Dio (110cc) - 2 person</h3>
+                <img src="images/scooters/honda-dio.png" alt="Honda Dio (110cc) - 2 person">
+            </section>
+            <section>
+                <h3>Honda PCX150 (149cc) - 2 person</h3>
+                <img src="images/scooters/honda-pxc150.png" alt="Honda PCX150 (149cc) - 2 person">
+            </section>
+        </section>
+
+        <section  class="rental-type">
+            <h2>Side-by-Side <strong>ATVs</strong></h2>
+            
+            <section>
+                <h3>Honda Pioneer 1000 - 4 person</h3>
+                <img src="images/atv/honda-pioneer.png" alt="Honda Pioneer 1000 - 4 person">
+            </section>
+        </section>
+
+        <section  class="rental-type">
+            <h2><strong>Jeeps</strong></h2>
+            
+            <section>
+                <h3>Jeep Wrangler - 4 door manuel with A/C - 5 person</h3>
+                <img src="images/jeep/jeep-wrangler.png" alt="Jeep Wrangler - 4 door manuel with A/C">
+            </section>
+            <section>
+                <h3>Jeep Wrangler - 2 door - open air - manuel - 4 person</h3>
+                <img src="images/jeep/jeep-wrangler-open-air.png" alt="Jeep Wrangler - 2 door - open air - manuel - 4 person">
+            </section>
+        </section>
+
+        <a class="rental" href="reservations.html">Rent reservation</a>
+    </main>
+
+    <footer>
+        <div class="info">
+            <h3>Shirt info</h3>
+            <p>&copy; ~Scoots~ Final Project</p> 
+            <p>Dmytro Ivanytskyi</p>
+            <p>WDD 230 Project</p>
+            <p class="footer-dates footer">Last Modification:  <span id="lastModified"></span></p>
+        </div>
+        <div class="contacts">
+            <h3>Quick Contact</h3>
+            <p>Quintana Roo C-1 km 4.5, Costera, 77675 Cozumel, Q.R., Mexico</p>
+            <p>+91-8080808023</p>
+            <p>info@scoots.com</p>
+        </div>
+        <div class="social">
+            <h3>Follows us</h3>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img calss="social-icon" src="images/facebook-icon.png" alt="facebook icon" width="48" height="48">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img calss="social-icon" src="images/instagram-icon.png" alt="instagram icon" width="48" height="48">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img calss="social-icon" src="images/twitter-icon.png" alt="twitter icon" width="48" height="48">
+            </a>
+        </div>
+        
+
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlights.js"></script>
+</body>
+</html>
