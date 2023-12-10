@@ -34,15 +34,20 @@ h3 {
 
 /*      HOME PAGE     */
 header {
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr;
     background: var(--dark-accent-color);
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    top: 0;
+    left: 0;
     margin: 0;
     padding: 0;
     color: var(--secondary-color);
     text-decoration: none;
+    z-index: 100;
 }
 
 header div:first-child {
@@ -152,10 +157,13 @@ header div:first-child {
     transform: scale(0.4);
 }
 
+main {
+    margin-top: 80px;
+}
+
 .hero {
     display: grid;
     grid-template-columns: 1fr;
-
 }
 
 .rental {
@@ -183,6 +191,11 @@ header div:first-child {
     height: auto;
 }
 
+.rental-type-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .rental-type {
     width: 100%;
     height: auto;
@@ -190,6 +203,37 @@ header div:first-child {
 
 .rental-type img {
     width: 100%;
+}
+
+.current-weather {
+    text-align: center;
+}
+  
+.current-icon {
+    width: 80px; 
+    height: 100%; 
+}
+
+.forecast {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forecast-data {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.weather-img {
+    display: inline-block;
+    height: 75px;
+	width: 75px;
 }
 
 footer {

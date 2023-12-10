@@ -38,6 +38,79 @@
         background-color: transparent;
     }
 
+
+    .second-button {
+        display: none;
+    }
+
+    .rental-type-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .scooters, .atv, .jeep{
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;        
+    }
+
+    .rental-type img {
+        max-width: 350px;
+        text-align: center;
+    }
+
+    .rental-type h3 {
+        max-width: 250px;
+        text-align: center;
+    }
+
+    
+    .rental-type h2 {
+        max-width: 125px;
+        min-width: 125px;
+    }
+
+    .atv {
+        grid-row: 2;
+        
+    }
+
+    .jeep {
+        grid-row: 3;
+    }
+
+
+    .hero picture {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .rental {
+        grid-row: 1;
+        grid-column: 1;
+        position: relative;
+        top: 25%;
+        left: 30%;
+        grid-row: 1;
+        grid-column: 1;
+        font-size: 28px;
+        padding: 20px 30px;
+    }
+
+    .weather {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .weather div {
+        margin: 0 20px;
+    }
+
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
