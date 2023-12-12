@@ -50,7 +50,81 @@
             </picture>
         </div>
 
-        </main>
+        <h1>Rental Services and Agreements</h1>
+
+        <div class="form-container">
+            <ul>
+                <li>$50 security deposit is required to confirm reservations.</li> 
+                <li>Valid drivers license is required in hand at the time of rental.</li> 
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+    
+            <form action="thankyou.html" method="get">
+                <label class="required" or="rental-date">Rental Date:</label>
+                <input type="date" id="rental-date" name="rental-date" required>
+                <br><br>
+            
+                <label class="required" for="rental-period">Rental Period:</label>
+                <input type="text" id="rental-period" name="rental-period" required>
+                <br><br>
+            
+                <label class="required" for="rental-type">Rental Type:</label>
+                <select id="rental-type" name="rental-type" required>
+                    <option value="">Choose a type</option>
+                    <option value="1">Honda Metro Scooter</option>
+                    <option value="bike">Honda Dio Scooter</option>
+                    <option value="scooter">Honda Dio Scooter</option>
+                    <option value="scooter">Honda Pioneer ATV</option>
+                    <option value="scooter">Jeep Wrangler - 4 door with a/c</option>
+                    <option value="scooter">Jeep Wrangler - 2 door</option>
+                </select>
+                <br><br>
+            
+                <label class="required" for="number">Number of Rentals:</label>
+                <input type="number" id="number" name="number" required>
+                <br><br>
+            
+                <label class="required" for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br><br>
+            
+                <label class="required" for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                <br><br>
+            
+                <label class="required" for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+                <br><br>
+            
+                <label class="required" for="state-country">Home State/Country:</label>
+                <input type="text" id="state-country" name="state-country" required>
+                <br><br>
+            
+                <label for="cruise-line">Cruise Line (if applicable):</label>
+                <input type="text" id="cruise-line" name="cruise-line">
+                <br><br>
+            
+                <label for="special-accommodations">Special Accommodations/Comments:</label>
+                <textarea id="special-accommodations" name="special-accommodations"></textarea>
+                <br><br>
+            
+                <label for="drop-off-request">Drop-off Request (Location/Need):</label>
+                <input type="text" id="drop-off-request" name="drop-off-request">
+                <br><br>
+            
+                <input type="hidden" id="timestamp" name="timestamp">
+            
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+     </main>
 
     <footer>
         <div class="info">
@@ -67,7 +141,7 @@
             <p>info@scoots.com</p>
         </div>
         <div class="social">
-            <h3>Follows us</h3>
+            <h3>Follow us</h3>
             <a href="https://www.facebook.com/" target="_blank">
                 <img calss="social-icon" src="images/facebook-icon.png" alt="facebook icon" width="48" height="48">
             </a>
@@ -83,9 +157,5 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/forecast.js"></script>
-    <script src="scripts/banner.js"></script>
-    <script src="scripts/spotlights.js"></script>
 </body>
 </html>

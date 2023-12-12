@@ -1,6 +1,6 @@
 :root{
     --content-width: 85%;
-    --primary-color: #0384ae;
+    --primary-color: #004d73;
     --secondary-color:  #EBF0F0;
     --dark-accent-color:  #28262C;
     --highlight-color:  #FF9B42;
@@ -182,8 +182,8 @@ main {
 }
 
 .rental:hover {
-    color: #fbfaf8;
-    background-color: #708090;
+    color: var(--secondary-color);
+    background-color: var(--dark-accent-color);
 }
 
 .hero img {
@@ -236,18 +236,139 @@ main {
 	width: 75px;
 }
 
+
+/* Reservatiom page */
+
+:root {
+    --form-margin: 20px;
+    --form-padding: 10px;
+    --label-margin-bottom: 5px;
+    --input-margin-bottom: 10px;
+    --button-bg-color: #007bff;
+    --button-text-color: #fbfaf8;
+  }
+
+  form {
+    width: 100%;
+    max-width: 400px;
+    margin: var(--form-margin) var(--form-margin);
+    padding: var(--form-padding);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+  }
+
+  .sidebar section form {
+    margin-left: -3px;
+}
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: var(--label-margin-bottom);
+  }
+  
+  input {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-bottom: var(--input-margin-bottom);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+input[type="submit"] {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+    background-color: var(--primary-color);
+}
+  
+.benefits-container div ul {
+    list-style-type: none;
+}
+
+.benefits-container div ul li::before {
+    content: "☑️ ";
+}
+
+.form-container ul {
+    list-style-type: none;
+    text-align: left;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.form-container ul li {
+    padding: 5px;
+}
+
+.form-container li::before {
+    content: "☑️ ";
+}
+
+.required::after {
+    content: "✱";
+    color: red;
+}
+
+#special-accommodations, #comment {
+    width: calc(100% - 22px);
+    padding: 8px;
+    resize: none;
+    height: 100px;
+}
+
+/* Contact pge */
+
+.map {
+    width: calc(100% - 15px);
+}
+
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background: var(--dark-accent-color);
-    margin: 0;
+    margin: 50px 0 0 0;
     padding: 0;
     color: var(--secondary-color);
     text-decoration: none;
     text-align: left;
 }
+
+/* rentals page */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
 
 footer div {
     width: 100%;

@@ -10,8 +10,11 @@ const main = document.querySelector("main");
 const body = document.querySelector("body");
 const sections = document.querySelectorAll("section")
 
+const form = document.querySelector("form");
+
+const tor = document.querySelector("th");
+
 container.addEventListener("click", () => {
-	container.classList.forEach(it => console.log(it));
 	const classListArray = Array.from(container.classList);
 
 	if (classListArray.includes('light')) {
@@ -20,11 +23,22 @@ container.addEventListener("click", () => {
 		body.style.background = "#28262C";
 		main.style.color = "#EBF0F0";
 		themeIcon.src = "images/moon-white.svg";
+
+		if(form != null) {
+			form.style.background = "#28262C";
+		}
+		if(tor != null) {
+			th.style.background = "#28262C";
+		}
+
 	} else {
 		container.classList.remove('dark')
 		container.classList.add('light')
 		body.style.background = "#EBF0F0";
 		main.style.color = "#28262C";
 		themeIcon.src = "images/sun-white.svg";
+		if(form != null) {
+			form.style.background = "#f9f9f9";
+		}
 	}
 });
