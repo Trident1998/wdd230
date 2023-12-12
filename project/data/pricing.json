@@ -7,7 +7,7 @@
         "reservationFullDay": "$30",
         "walkInHalfDay": "$25",
         "walkInFullDay": "$35",
-        "imgUrl": "project/images/scooters/honda-metropolitan.png"
+        "imgUrl": "project/images/scooters/honda-metropolitan.webp"
       },
       {
         "type": "Honda Dio Scooter",
@@ -16,7 +16,7 @@
         "reservationFullDay": "$40",
         "walkInHalfDay": "$35",
         "walkInFullDay": "$45",
-        "imgUrl": "project/images/scooters/honda-dio.png"
+        "imgUrl": "project/images/scooters/honda-dio.webp"
       },
       {
         "type": "Honda PCX150 Scooter",
@@ -25,7 +25,7 @@
         "reservationFullDay": "$50",
         "walkInHalfDay": "$45",
         "walkInFullDay": "$55",
-        "imgUrl": "project/images/scooters/honda-pxc150.png"
+        "imgUrl": "project/images/scooters/honda-pxc150.webp"
       },    
       {
         "type": "Honda Pioneer ATV",
@@ -34,7 +34,7 @@
         "reservationFullDay": "$70",
         "walkInHalfDay": "$60",
         "walkInFullDay": "$80",
-        "imgUrl": "project/images/atv/honda-pioneer.png"
+        "imgUrl": "project/images/atv/honda-pioneer.webp"
       },
       {
         "type": "Jeep Wrangler - 4 door with a/c",
@@ -43,7 +43,7 @@
         "reservationFullDay": "$100",
         "walkInHalfDay": "$85",
         "walkInFullDay": "$125",
-        "imgUrl": "project/images/jeep/jeep-wrangler.png"
+        "imgUrl": "project/images/jeep/jeep-wrangler.webp"
       },
       {
         "type": "Jeep Wrangler - 2 door",
@@ -52,7 +52,7 @@
         "reservationFullDay": "$85",
         "walkInHalfDay": "$70",
         "walkInFullDay": "$90",
-        "imgUrl": "project/images/jeep/jeep-wrangler-open-air.png"
+        "imgUrl": "project/images/jeep/jeep-wrangler-open-air.webp"
       }
     ]
   }
