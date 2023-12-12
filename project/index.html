@@ -22,7 +22,7 @@
         <div>
             <div class="logo">
                 <a href="index.html">
-                    <img id="logo-img" src="images/logo1.png" alt="Company Logo" width="400" height="138">
+                    <img id="logo-img" src="images/logo1.webp"alt="Company Logo" width="400" height="138">
                 </a>
             </div>       
 
@@ -43,12 +43,20 @@
 
     <main>
         <div class="hero">
-            <picture>
-                <source media="(max-width: 500px)" srcset="images/hero-small.jpeg">
-                <source media="(max-width: 900px)" srcset="images/hero-medium.jpeg">
-                <img src="images/hero-large.jpeg" alt="Hero image" width="1920" height="700">
-            </picture>
+            <div class="slideshow-container">
+                <picture class="mySlides fade">
+                    <source media="(max-width: 500px)" srcset="images/hero-small.jpeg">
+                    <source media="(max-width: 900px)" srcset="images/hero-medium.jpeg">
+                    <img src="images/hero-large.webp" alt="Hero image" width="1920" height="700">
+                </picture>
 
+                <picture class="mySlides fade">
+                    <source media="(max-width: 500px)" srcset="images/cozumel-banner-small.png">
+                    <source media="(max-width: 900px)" srcset="images/cozumel-banner-medium.png">
+                    <img src="images/cozumel-banner-large.webp"alt="Hero image" width="1920" height="700">
+                </picture>
+            </div>
+        
             <a class="rental" href="reservations.html">Rent reservation</a>
         </div>
         <h1>Types of Rentals</h1>
@@ -59,15 +67,15 @@
     
                 <section>
                     <h3>Honda Metropolitan (49cc) - 1 person</h3>
-                    <img src="images/scooters/honda-metropolitan.png" alt="Honda Metropolitan (49cc) - 1 person">
+                    <img src="images/scooters/honda-metropolitan.webp"alt="Honda Metropolitan (49cc) - 1 person">
                 </section>
                 <section>
                     <h3>Honda Dio (110cc) - 2 person</h3>
-                    <img src="images/scooters/honda-dio.png" alt="Honda Dio (110cc) - 2 person">
+                    <img src="images/scooters/honda-dio.webp"alt="Honda Dio (110cc) - 2 person">
                 </section>
                 <section>
                     <h3>Honda PCX150 (149cc) - 2 person</h3>
-                    <img src="images/scooters/honda-pxc150.png" alt="Honda PCX150 (149cc) - 2 person">
+                    <img src="images/scooters/honda-pxc150.webp"alt="Honda PCX150 (149cc) - 2 person">
                 </section>
             </section>
     
@@ -76,7 +84,7 @@
                 
                 <section>
                     <h3>Honda Pioneer 1000 - 4 person</h3>
-                    <img src="images/atv/honda-pioneer.png" alt="Honda Pioneer 1000 - 4 person">
+                    <img src="images/atv/honda-pioneer.webp"alt="Honda Pioneer 1000 - 4 person">
                 </section>
             </section>
     
@@ -85,11 +93,11 @@
                 
                 <section>
                     <h3>Jeep Wrangler - 4 door manuel with A/C - 5 person</h3>
-                    <img src="images/jeep/jeep-wrangler.png" alt="Jeep Wrangler - 4 door manuel with A/C">
+                    <img src="images/jeep/jeep-wrangler.webp"alt="Jeep Wrangler - 4 door manuel with A/C">
                 </section>
                 <section>
                     <h3>Jeep Wrangler - 2 door - open air - manuel - 4 person</h3>
-                    <img src="images/jeep/jeep-wrangler-open-air.png" alt="Jeep Wrangler - 2 door - open air - manuel - 4 person">
+                    <img src="images/jeep/jeep-wrangler-open-air.webp"alt="Jeep Wrangler - 2 door - open air - manuel - 4 person">
                 </section>
             </section>
         </section>
@@ -130,13 +138,13 @@
         <div class="social">
             <h3>Follow us</h3>
             <a href="https://www.facebook.com/" target="_blank">
-                <img calss="social-icon" src="images/facebook-icon.png" alt="facebook icon" width="48" height="48">
+                <img calss="social-icon" src="images/facebook-icon.webp"alt="facebook icon" width="48" height="48">
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-                <img calss="social-icon" src="images/instagram-icon.png" alt="instagram icon" width="48" height="48">
+                <img calss="social-icon" src="images/instagram-icon.webp"alt="instagram icon" width="48" height="48">
             </a>
             <a href="https://twitter.com/" target="_blank">
-                <img calss="social-icon" src="images/twitter-icon.png" alt="twitter icon" width="48" height="48">
+                <img calss="social-icon" src="images/twitter-icon.webp"alt="twitter icon" width="48" height="48">
             </a>
         </div>
         
@@ -146,8 +154,5 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
     <script src="scripts/weather.js"></script>
-    <script src="scripts/forecast.js"></script>
-    <script src="scripts/banner.js"></script>
-    <script src="scripts/spotlights.js"></script>
 </body>
 </html>
