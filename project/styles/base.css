@@ -19,6 +19,7 @@ body {
     margin: 0 auto;
     padding: 0;
     text-decoration: none;
+    line-height: 150%;
 }
 
 h1 {
@@ -31,6 +32,10 @@ h2 {
 
 h3 {
     font-size: 18px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*      HOME PAGE     */
