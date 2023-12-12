@@ -1,7 +1,7 @@
 document.querySelector("main").style.display = "block";
 
 const baseURL = "https://trident1998.github.io/wdd230/";
-const pricingUrl = "http://127.0.0.1:5500/project/data/pricing.json";
+const pricingUrl = "https://trident1998.github.io/wdd230//project/data/pricing.json";
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const article = document.querySelector(".cards");
