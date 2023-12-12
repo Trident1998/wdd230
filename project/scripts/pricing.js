@@ -30,6 +30,8 @@ function displayRentals(rentals) {
         const img = document.createElement("img");
         img.src = baseURL + rental.imgUrl;
         img.alt = rental.type;
+        img.width = '640';
+        img.height = '480';
 
 
         const rawTable = ceateTable();

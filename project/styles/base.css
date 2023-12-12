@@ -105,7 +105,7 @@ header div:first-child {
     display: block;           
     padding: 2rem 0;
 	transition: 0.25s;            
-	font-size: 24px;
+	font-size: 20px;
     line-height: 170%;
     width: 100%;      
     text-align: center;
@@ -246,6 +246,7 @@ main {
 
 .rental-type img {
     width: 100%;
+    height: auto;
 }
 
 .current-weather {
